@@ -12,7 +12,7 @@ app = FastAPI(
 origins = [
     "http://localhost",
     "http://localhost:3000",
-    "https://your-frontend-domain.vercel.app",  # Add your frontend domain
+    "https://sea-lion.netlify.app",
 ]
 
 app.add_middleware(

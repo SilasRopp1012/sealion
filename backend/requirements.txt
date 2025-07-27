@@ -1,0 +1,8 @@
+fastapi>=0.68.0
+uvicorn>=0.15.0
+pydantic>=1.8.2
+httpx>=0.24.0
+beautifulsoup4>=4.9.3  # For HTML parsing
+python-multipart>=0.0.5  # For form data handling
+aiohttp>=3.8.1  # For async HTTP requests
+cryptography>=3.4.7  # For entropy calculations 

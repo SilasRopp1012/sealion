@@ -1,0 +1,14 @@
+{
+  "patterns": [
+    "dpl_[A-Za-z0-9]{24,}",
+    "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmn",
+    "0123456789abcdefghijklmnopqrstuvwxyz",
+    "deadbeefdeadbeefdeadbeefdeadbeef",
+    "sk_test_[A-Za-z0-9]{24,}",
+    "rk_test_[A-Za-z0-9]{24,}",
+    "pk_test_[A-Za-z0-9]{24,}",
+    "sk_live_[A-Za-z0-9]{24,}",
+    "rk_live_[A-Za-z0-9]{24,}",
+    "pk_live_[A-Za-z0-9]{24,}"
+  ]
+} 

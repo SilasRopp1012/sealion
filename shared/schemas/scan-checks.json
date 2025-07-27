@@ -1,0 +1,125 @@
+{
+    "categories": [
+      {
+        "name": "Authentication & Access Control",
+        "checks": [
+          {
+            "id": "auth.missing_protection",
+            "description": "Endpoints with no auth token or session check"
+          },
+          {
+            "id": "auth.idor",
+            "description": "Detect insecure direct object reference (IDOR) via predictable numeric IDs"
+          },
+          {
+            "id": "auth.token_exposure",
+            "description": "Access tokens, JWTs, or session tokens leaked in URLs or frontend"
+          }
+        ]
+      },
+      {
+        "name": "Injection",
+        "checks": [
+          {
+            "id": "inj.xss",
+            "description": "Reflected or DOM-based Cross-Site Scripting"
+          },
+          {
+            "id": "inj.sqli",
+            "description": "Basic SQL injection via GET/POST parameters"
+          },
+          {
+            "id": "inj.graphql",
+            "description": "GraphQL query abuse or introspection exposure"
+          }
+        ]
+      },
+      {
+        "name": "Secrets & Config Exposure",
+        "checks": [
+          {
+            "id": "secrets.js_bundle_leak",
+            "description": "API keys or secrets found in frontend JS files"
+          },
+          {
+            "id": "secrets.env_exposed",
+            "description": ".env file or config accidentally exposed"
+          },
+          {
+            "id": "secrets.high_entropy",
+            "description": "Suspicious high-entropy strings that may be credentials"
+          }
+        ]
+      },
+      {
+        "name": "CORS & Headers",
+        "checks": [
+          {
+            "id": "cors.wildcard_origin",
+            "description": "CORS policy allows all origins (Access-Control-Allow-Origin: *)"
+          },
+          {
+            "id": "headers.missing_security_headers",
+            "description": "Missing standard security headers (CSP, HSTS, X-Frame-Options, etc.)"
+          }
+        ]
+      },
+      {
+        "name": "Cloud Misconfigurations",
+        "checks": [
+          {
+            "id": "cloud.firebase_insecure_rules",
+            "description": "Firestore or Realtime DB allows public access"
+          },
+          {
+            "id": "cloud.supabase_rls_disabled",
+            "description": "Supabase table lacks Row Level Security"
+          },
+          {
+            "id": "cloud.storage_public_files",
+            "description": "Sensitive files in public S3/GCS/CDN folders"
+          }
+        ]
+      },
+      {
+        "name": "Client-Side Risks",
+        "checks": [
+          {
+            "id": "frontend.eval_or_innerhtml",
+            "description": "Use of eval() or dangerouslySetInnerHTML found"
+          },
+          {
+            "id": "frontend.business_logic_exposure",
+            "description": "Sensitive business logic exposed in frontend JS"
+          }
+        ]
+      },
+      {
+        "name": "Logic & Abuse",
+        "checks": [
+          {
+            "id": "logic.parameter_tampering",
+            "description": "Behavior changes when tampering with query/body parameters"
+          },
+          {
+            "id": "logic.reused_coupon",
+            "description": "Coupon or discount logic vulnerable to reuse"
+          }
+        ]
+      },
+      {
+        "name": "Miscellaneous",
+        "checks": [
+          {
+            "id": "misc.git_or_logs_exposed",
+            "description": ".git folder or server logs publicly accessible"
+          },
+          {
+            "id": "misc.robots_sensitive_paths",
+            "description": "robots.txt exposes sensitive endpoints or admin panels"
+          }
+        ]
+      }
+    ]
+  }
+  

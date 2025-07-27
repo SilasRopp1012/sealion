@@ -5,8 +5,13 @@ import "./globals.css";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Sealion Security",
+  title: "SeaLion Security",
   description: "Scan your web app for modern vulnerabilities.",
+  icons: {
+    icon: '/logo.png', // Use your logo as favicon
+    // Or use a custom favicon:
+    // icon: '/favicon.ico',
+  }
 };
 
 export default function RootLayout({

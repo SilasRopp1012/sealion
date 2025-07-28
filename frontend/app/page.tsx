@@ -224,7 +224,7 @@ export default function Home() {
             <form onSubmit={handleScan} className="relative">
               <div className="relative group">
                 <div className="absolute inset-0 bg-gradient-to-r from-teal-500 to-blue-500 rounded-2xl blur opacity-20 group-hover:opacity-30 transition duration-300"></div>
-                <div className="relative flex items-center bg-gray-800/50 backdrop-blur-sm border border-gray-700/50 rounded-2xl p-2 shadow-2xl">
+                <div className="relative flex flex-col sm:flex-row items-stretch sm:items-center bg-gray-800/50 backdrop-blur-sm border border-gray-700/50 rounded-2xl p-2 shadow-2xl">
                   <input
                     className="flex-1 bg-transparent border-none text-gray-200 placeholder-gray-500 px-6 py-4 text-lg focus:outline-none focus:ring-0"
                     type="url"
@@ -235,7 +235,7 @@ export default function Home() {
                     required
                   />
                   <button
-                    className="bg-gradient-to-r from-teal-500 to-blue-500 hover:from-teal-600 hover:to-blue-600 text-white px-8 py-4 rounded-xl font-semibold text-lg transition-all duration-200 transform hover:scale-105 shadow-lg disabled:opacity-50 disabled:cursor-not-allowed disabled:transform-none"
+                    className="bg-gradient-to-r from-teal-500 to-blue-500 hover:from-teal-600 hover:to-blue-600 text-white px-8 py-4 rounded-xl font-semibold text-lg transition-all duration-200 transform hover:scale-105 shadow-lg disabled:opacity-50 disabled:cursor-not-allowed disabled:transform-none mt-2 sm:mt-0"
                     type="submit"
                     disabled={isLoading}
                   >

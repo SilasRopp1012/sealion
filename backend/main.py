@@ -10,8 +10,6 @@ app = FastAPI(
 
 # Set up CORS middleware
 origins = [
-    "http://localhost",
-    "http://localhost:3000",
     "https://sea-lion.netlify.app",
 ]
 
